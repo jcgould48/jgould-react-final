@@ -3,14 +3,14 @@ import PropTypes from 'prop-types';
 
 
 const BeerItem = ({ 
-    beer : {name, description, image_url, food_pairing, brewers_tips, _id:id}}) =>{
+    beer : {name, description, image_url, food_pairing, brewers_tips, id}}) =>{
     return (    
             <div>
-                <div  className='bcontainer'>
+        <div className='bcontainer'>
 <div className='imagecon'>
 <img className='image'  src={image_url} alt="..."/> 
 </div>
-       <div  className='beerinfo'>
+       <div key={id} className='beerinfo'>
            <div className='title'>{name}</div>
            <br />
            <span>

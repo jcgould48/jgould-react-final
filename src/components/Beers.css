@@ -22,7 +22,7 @@
     height:400px;
     display: flex;
     justify-content:space-around;
-    /* align-content: space-between; */
+    /* align-co ntent: space-between; */
     flex-direction: row;
 }
 
@@ -31,16 +31,18 @@
     display: flex;
     align-content:center ;
     justify-content:center ;
-    flex-grow: .5;
-    width:30;
+    /* flex-grow: .5; */
+    width:30%;
     padding-right: 60px;
 }
 
 .beerinfo{
-    flex-grow: 3;
+    /* flex-grow: 3; */
+    width:70%;
 }
 
 .image{
     height:40%;
+    margin-top: 80px;
 
 }

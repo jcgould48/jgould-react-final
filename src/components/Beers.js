@@ -11,7 +11,7 @@ const Beers = (props) => {
 .map((beer,idx) =>{
     return(
         <BeerItem 
-        key={beer._id} 
+        key={idx} 
         beer={beer}/>
     )}
     )}
@@ -27,7 +27,7 @@ beers: PropTypes.arrayOf(
         description: PropTypes.string.isRequired,
         image_url: PropTypes.string.isRequired,
         brewers_tips: PropTypes.string.isRequired,
-        // _id: PropTypes.string.isRequired,
+        // idx: PropTypes.string.isRequired,
         food_pairing:PropTypes.array
     })
 )
